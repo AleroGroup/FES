@@ -63,7 +63,7 @@ export default {
 }
 
 .main-nav__item {
-  margin : 0 5px;
+  margin : 0 10px;
   font-weight: bold;
   font-size: 15px;
 }

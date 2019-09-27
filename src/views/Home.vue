@@ -13,15 +13,17 @@
                Strained teacher-student interactions, poor student<br>
                engagement and performance.</p>
             </v-card>
+            <v-layout hidden-xs-only>
             <v-card  data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500" color="transparent" flat id="fes-intro">
               <v-btn flat class="connect__button" color="#fda503">CONNECT WITH US</v-btn>
             </v-card>
+            </v-layout>
          </v-layout>
        </v-layout>    
      </v-content>
      <img>
    </v-img>
-  <v-layout column justify-center id="service-section">
+  <v-layout column justify-center id="service-section" style="margin-top:10%">
     <v-flex xs9 md3>
       <h5>No matter who you are, FES offers the best <br>
       consultation & training solutions</h5> 
@@ -29,32 +31,32 @@
      
       <v-layout row align-center  class="service__intro">
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
-              <v-layout column  justify-center>
-                <img :src="student">
+              <v-layout column align-center>
+                <img :src="student" height="95" width="95">
                 <ul class="service__item-button" >
                     <li><a href="">Graduate students</a></li>
                 </ul>
               </v-layout>
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="350">
-               <v-layout column  justify-center>
-                <img :src="education" >
+               <v-layout column align-center>
+                <img :src="education" height="89" width="110">
                 <ul class="service__item-button">
                     <li><a href="">Teachers & faculty</a></li>
                 </ul>
                </v-layout>
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="450">
-               <v-layout column  justify-center>
-                <img :src="staff">
+               <v-layout column align-center>
+                <img :src="staff" height="85" width="164">
                 <ul class="service__item-button">
                     <li><a href="">School admin & staff</a></li>
                 </ul>
                </v-layout>
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="550">
-               <v-layout column  justify-center>
-                <img :src="manager">
+               <v-layout column align-center>
+                <img :src="manager" height="84" width="164">
                 <ul class="service__item-button">
                   <li><a href="">Business owners</a></li>
                 </ul>
@@ -113,7 +115,7 @@ export default {
      form__img:'https://ik.imagekit.io/qpt2onjfe/fes/contact_D1y1LU-qg.svg',
      student: 'https://ik.imagekit.io/qpt2onjfe/fes/noun_education_13647_LCyHsgzoFu.svg',
      education: 'https://ik.imagekit.io/qpt2onjfe/fes/noun_education_25971_0NYcKG8j7-.svg',
-     staff: 'https://ik.imagekit.io/qpt2onjfe/fes/noun_staff_633281_x0Om9iSpuw.svg',
+     staff: 'https://ik.imagekit.io/qpt2onjfe/noun_staff_633281_x0Om9iSpuw_vlLQ-5OWo.svg',
      manager:'https://ik.imagekit.io/qpt2onjfe/fes/noun_manager_1802650_wfCCbkz6n.svg',
 
      name:'',
@@ -191,7 +193,7 @@ export default {
 
 <style scoped>
 .screen{
-  height: 100vh;
+  height: 35%;
 }
 #fes-intro > h1 {
     text-align: center;
@@ -221,11 +223,11 @@ export default {
 }
 
 #service-section {
-    background: #f0f0ecd0;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    background: #fdf6d662;
+    padding-top: 35px;
+    padding-bottom: 70px;
     margin-bottom: 0;
-    height: 360px;
+    height: 420px;
 }
 #service-section h5 {
     font-size: 25px;
@@ -252,7 +254,7 @@ export default {
 }
 .service__item-button a {
     text-decoration: none;
-    background: white;
+    background: #fdfaed;
     border-radius: 10px;
     padding: 10px 16px;
     color: #2612A6;
