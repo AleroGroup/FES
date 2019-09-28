@@ -9,7 +9,7 @@
              <router-link small class="main-nav__item text-uppercase" to="/" text exact active-class="">Home</router-link>
              <router-link small class="main-nav__item text-uppercase" to="/aboutus" text exact>About us</router-link>
              <router-link small class="main-nav__item text-uppercase" to="/team" text exact>Team</router-link>
-            <!--  <router-link small class="main-nav__item text-uppercase" to="/contact" text exact>Contact</router-link> -->
+            <router-link small class="main-nav__item text-uppercase" to="/contact" text exact>Contact</router-link>
 
           </v-layout>
 
@@ -48,8 +48,9 @@ export default {
     svgPath: mdiMenu,
     links: [
       { title: 'Home', to: '/' },
-      { title: 'My work', to: '/porfolio' },
-      { title: 'contact', to: '/contact' }
+      { title: 'About us', to: '/aboutus' },
+      { title: 'contact', to: '/contact' },
+       { title: 'Our Team', to: '/team' }
     ]
   })
 }

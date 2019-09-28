@@ -24,45 +24,88 @@
      <img>
    </v-img>
   <v-layout column justify-center id="service-section" style="margin-top:10%">
-    <v-flex xs9 md3>
-      <h5>No matter who you are, FES offers the best <br>
+    <v-flex xs9 md3 >
+      <h5 style="margin-top:10%">No matter who you are, FES offers the best <br>
       consultation & training solutions</h5> 
     </v-flex>
-     
-      <v-layout row align-center  class="service__intro">
+     <v-container grid-list-sm style="margin-bottom:4%">
+      <v-layout row justify-center align-center>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
-              <v-layout column align-center>
-                <img :src="student" height="95" width="95">
-                <ul class="service__item-button" >
-                    <li><a href="">Graduate students</a></li>
-                </ul>
-              </v-layout>
+               <v-hover v-slot:default="{ hover }" close-delay="70">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="300">
+                  <v-layout column align-center>
+                      <v-img
+                        width="80"
+                        height="auto"
+                        :src="student"
+                        class='ma-4'
+                        alt="Graduate student"
+                      >
+                      </v-img> 
+                 <v-layout hidden-sm-and-down>
+                   <p class="title service__item-button">Graduate Students & Researchers</p>
+                 </v-layout>
+                      
+                    </v-layout>
+                  </v-card>
+               </v-hover>
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="350">
-               <v-layout column align-center>
-                <img :src="education" height="89" width="110">
-                <ul class="service__item-button">
-                    <li><a href="">Teachers & faculty</a></li>
-                </ul>
-               </v-layout>
+              <v-hover v-slot:default="{ hover }" close-delay="70">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="300">
+                  <v-layout column align-center>
+                      <v-img
+                        width="80"
+                        height="auto"
+                        :src="education"
+                        class='ma-4'
+                      >
+                      </v-img> 
+                    <v-layout hidden-sm-and-down>
+                      <p class="title service__item-button">Teachers, Librarians & Faculty </p>
+                    </v-layout>
+                    </v-layout>
+                  </v-card>
+               </v-hover>
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="450">
-               <v-layout column align-center>
-                <img :src="staff" height="85" width="164">
-                <ul class="service__item-button">
-                    <li><a href="">School admin & staff</a></li>
-                </ul>
-               </v-layout>
+               <v-hover v-slot:default="{ hover }" close-delay="70">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="300">
+                  <v-layout column align-center>
+                      <v-img
+                        width="80"
+                        height="auto"
+                        :src="staff"
+                        class='ma-4'
+                      >
+                      </v-img> 
+                     <v-layout hidden-sm-and-down>
+                      <p class="title service__item-button">School Administrators & Staff</p>
+                     </v-layout>
+                    </v-layout>
+                  </v-card>
+               </v-hover>
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="550">
-               <v-layout column align-center>
-                <img :src="manager" height="84" width="164">
-                <ul class="service__item-button">
-                  <li><a href="">Business owners</a></li>
-                </ul>
-               </v-layout>
+               <v-hover v-slot:default="{ hover }" close-delay="70">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="300">
+                  <v-layout column align-center>
+                      <v-img
+                        width="80"
+                        height="auto"
+                        :src="manager"
+                        class='ma-4'
+                      >
+                      </v-img> 
+                    <v-layout hidden-sm-and-down>
+                      <p class="title service__item-button">Teachers, Librarians & Faculty </p>
+                    </v-layout>
+                    </v-layout>
+                  </v-card>
+               </v-hover>
             </v-flex>
       </v-layout>
+    </v-container>
    </v-layout>
   <v-img :src="form__img" row id="questions-section">
     
@@ -113,16 +156,16 @@ export default {
      //images
      head__title:'https://ik.imagekit.io/qpt2onjfe/fes/background_HRJ60zWCxI.svg',
      form__img:'https://ik.imagekit.io/qpt2onjfe/fes/contact_D1y1LU-qg.svg',
-     student: 'https://ik.imagekit.io/qpt2onjfe/fes/noun_education_13647_LCyHsgzoFu.svg',
-     education: 'https://ik.imagekit.io/qpt2onjfe/fes/noun_education_25971_0NYcKG8j7-.svg',
-     staff: 'https://ik.imagekit.io/qpt2onjfe/noun_staff_633281_x0Om9iSpuw_vlLQ-5OWo.svg',
-     manager:'https://ik.imagekit.io/qpt2onjfe/fes/noun_manager_1802650_wfCCbkz6n.svg',
+     student: 'https://ik.imagekit.io/qpt2onjfe/fes/Group_6_ahiTVG6cW.svg',
+     education: 'https://ik.imagekit.io/qpt2onjfe/fes/Group_8_D6eRDvbXs6.svg',
+     staff: 'https://ik.imagekit.io/qpt2onjfe/fes/Group_7_2EMuCXHFz4.svg',
+     manager:'https://ik.imagekit.io/qpt2onjfe/fes/Group_9_Zqsgxo7jCi.svg',
 
      name:'',
      email:'',
      message:'',
-    formSubmitted: false,
-    isLoading: false,
+     formSubmitted: false,
+     isLoading: false,
      overlay: true,
      formInvalid: false
   }),
@@ -223,16 +266,15 @@ export default {
 }
 
 #service-section {
-    background: #fdf6d662;
+    background:  linear-gradient(180deg, rgba(255, 215, 136, 0.171) 18.09%, rgba(255, 245, 193, 0.301) 70.17%);
     padding-top: 35px;
-    padding-bottom: 70px;
-    margin-bottom: 0;
+   padding-bottom: 8%;
     height: 420px;
 }
 #service-section h5 {
     font-size: 25px;
     text-align: center;
-     margin-bottom: 4%;
+     margin-bottom: 2%;
 }
 .service__intro {
     width: 100%;
@@ -241,7 +283,7 @@ export default {
 }
 .service__intro  img {
     margin-left: 35px;
-    margin-bottom: 2.4px;
+    margin-bottom: 1.4px;
     margin-top: 18px;
 }
 .service__item{
@@ -252,20 +294,21 @@ export default {
     list-style: none;
     margin-top:0;
 }
-.service__item-button a {
+.service__item-button {
     text-decoration: none;
-    background: #fdfaed;
     border-radius: 10px;
     padding: 10px 16px;
     color: #2612A6;
-    border: 2px solid #2612A6;
     font-weight:bold; 
 }
-.service__item-button a:hover,
-.service__item-button a:active {
-    background: #2612A6;
-    color: white;
+.service__card {
+    text-decoration: none;
+    border-radius: 10px;
+    border: 3px solid #2612A6;
+    font-weight:bold; 
+    background-color: rgba(255, 255, 255, 0.068);
 }
+
 #questions-section {
    background:#2612A6;
    padding-top:2px;

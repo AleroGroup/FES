@@ -22,10 +22,10 @@
    </v-img>
   
   <div id="fes-motivation">
-   <v-layout column justify-center align-center  style="margin-top:10%">
+   <v-layout column justify-center align-center  style="margin-top:10%" hidden-sm-and-down>
      <h2 data-aos="fade-up" style="margin-top:4%">Our Motivation</h2>
    </v-layout>
-    <v-layout  row justify-space-around class="motivation__items">
+    <v-layout  row justify-space-around class="motivation__items" hidden-sm-and-down>
           <v-card flat color="transparent" class="motivation__item text-center" data-aos="fade-up"  data-aos-delay="250">
              <img :src="journy">
              <p class="btn">OUR JOURNEY</p>
