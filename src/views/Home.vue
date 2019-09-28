@@ -332,15 +332,18 @@ export default {
     font-size: 16px;
     
 }
+
 .question-form button {
     border-radius: 16px;
    
 }
+
 .question-form .text-area {
     padding-bottom: 60px;
 }
+
 .questions-section_item{
-  font-size: 25px;
+    font-size: 25px;
 
 }
 .form{

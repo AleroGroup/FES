@@ -57,7 +57,7 @@
                 <input v-model="name" type="text"  placeholder="Name *" required="required" aria-invalid="true" />
                 <input v-model="email" type="email" placeholder="Email *">
                 <v-layout justify-end>
-                   <v-btn color="white" v-on:click="submit" type="submit">Get Started</v-btn>
+                   <v-btn color="white" v-on:click="submit" type="submit" outlined>Get Started</v-btn>
                 </v-layout>
             </form>
         </v-card>
@@ -86,12 +86,14 @@ export default {
     boards: [
        {
          url: 'https://ik.imagekit.io/qpt2onjfe/0_Pz9kyUGrZ.jpeg',
-         name: 'Frida Ngari',
+         name: 'Frida Wawira Ngari',
+         title: 'Founder and CEO works as Lead Strategist on Educational Technologies',
          style: 'border-radius:100px;width:200px;'
        },
        {
          url: 'https://ik.imagekit.io/qpt2onjfe/fes/download_5qmKj7b2N.png',
-         name: 'Stephanie Kirathe',
+         name: 'Stephanie Wangari Kirathe',
+         title: 'Chief Technical Officer (CTO) and also works as the Chief Operations Officer (COO)',
          style: 'border-radius:100px;width:200px;'
        },
     ],
@@ -99,16 +101,19 @@ export default {
        {
          url: 'https://ik.imagekit.io/qpt2onjfe/fes/IMG-6041_OURNR1dl-.JPG',
          name: 'Joshua Kimbareeba',
+         title: 'Fullstack Developer',
          style: 'border-radius:100px;width:200px;height:200px'
        },
        {
          url: 'https://ik.imagekit.io/qpt2onjfe/fes/Group_9_Zqsgxo7jCi.svg',
          name: 'Evans Kimathi',
+         title: 'Designer and also works as Frontend Developer',
          style: 'border-radius:100px;width:200px;height:200px'
        },
        {
          url: 'https://ik.imagekit.io/qpt2onjfe/fes/660095_GwuNRca1v.JPG',
          name: 'Precious Wangu',
+         title: 'Designer and also works as UX Researcher',
          style: 'border-radius:100px;width:200px;height:200px'
        },
     ],
@@ -205,6 +210,11 @@ export default {
   font-weight: 400 !important;
   font-size: 20px;
 }
+.team__title {
+  text-align: center;
+  width: 250px;
+}
+
 .main__title {
   font-size: 35px;
 }
