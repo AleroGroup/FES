@@ -154,12 +154,12 @@ const template_id = "template_ukUBbp7Z";
 #contactform > h2 {
     text-align: center;
     color: grey;
-    font-size: 45px;
+    font-size: 35px;
 }
 #contactform > h2.gray {
     text-align: center;
     color: #2612A6;
-    font-size: 36px;
+    font-size: 26px;
 }
 
 .question-form input{

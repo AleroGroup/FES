@@ -32,10 +32,10 @@
       <v-layout row justify-center align-center>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
                <v-hover v-slot:default="{ hover }" close-delay="70">
-                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="300">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
                   <v-layout column align-center>
                       <v-img
-                        width="80"
+                        width="60"
                         height="auto"
                         :src="student"
                         class='ma-4'
@@ -52,10 +52,10 @@
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="350">
               <v-hover v-slot:default="{ hover }" close-delay="70">
-                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="300">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
                   <v-layout column align-center>
                       <v-img
-                        width="80"
+                        width="60"
                         height="auto"
                         :src="education"
                         class='ma-4'
@@ -70,10 +70,10 @@
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="450">
                <v-hover v-slot:default="{ hover }" close-delay="70">
-                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="300">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
                   <v-layout column align-center>
                       <v-img
-                        width="80"
+                        width="60"
                         height="auto"
                         :src="staff"
                         class='ma-4'
@@ -88,10 +88,10 @@
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="550">
                <v-hover v-slot:default="{ hover }" close-delay="70">
-                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="300">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
                   <v-layout column align-center>
                       <v-img
-                        width="80"
+                        width="60"
                         height="auto"
                         :src="manager"
                         class='ma-4'
