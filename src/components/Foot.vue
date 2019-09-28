@@ -17,9 +17,8 @@
         </div>
         <div  class="footer_item">
             <h4 class="footer__title">Stay in touch</h4>
-            <p>Facebook</p>
-            <p>Twitter</p>
-            <p>LinkedIn</p>
+            <p><a :href="facebook"> Facebook </a></p>
+            <p><a :href="linkedIn"> LinkedIn </a></p>
         </div>
         
     </v-layout>
@@ -37,8 +36,11 @@
 
 export default {
   data: () => ({
-   //
-  })
+
+   //social media
+   facebook:'https://www.facebook.com/FESltd/?__tn__=kC-R&eid=ARC2EDPHpdVMmOxH5mUwZwKB4EWpmk2aVTTa0iVDb4V2E64ZolTbPf37b1BleRhInGMhvaldFubZiYYc&hc_ref=ARQ7Lg2IY3I-v4ODNx08XEfDDpL0xdaOYbPW12rfQEytQ01GI7mkchuzpcJmlrW1cts&fref=nf',
+   linkedIn:'https://www.linkedin.com/company/firefly-edtech-solutions-ltd/'
+ })
 }
 </script>
 

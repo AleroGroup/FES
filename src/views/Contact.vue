@@ -1,6 +1,6 @@
 <template>
 <v-content class="screen">
-   <v-img :src="head__title" >
+   <v-img :src="head__title" style="margin-top:6%;margin-bottom:6%;">
     <v-layout column justify-center align-center>
   
    <v-card color="transparent" flat style="margin-bottom:2%;">

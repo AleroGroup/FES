@@ -45,11 +45,9 @@
             <v-layout column justify-center align-center class="message__items">
                 <h2 class="message__item">OUR JOURNEY</h2>
                 <v-layout  row justify-center align-center>
-                   <v-hover data-aos="fade-right" v-slot:default="{ hover }">
-                      <v-card :elevation="hover ? 12 : 2" class="mx-auto">
+                      <v-card data-aos="fade-right" class="mx-auto">
                         <v-img :src="journey" width="330" height="200"></v-img>
                       </v-card>
-                   </v-hover>
                   <p class="text-justify" style="width:350px; margin:26px;">
                     When i learned accounting at college, it was not a nice experience. The teacher adopted a more teacher-
                     centered approach, where he was in full control of the class. He was the only one who was responsible for
@@ -75,11 +73,10 @@
                    Management System that was used to post students' grades, list reading materials and update crucial
                    communication to teachers and students...
               </p>
-            <v-hover data-aos="fade-left" v-slot:default="{ hover }">
-              <v-card :elevation="hover ? 12 : 2" class="mx-auto">
+              <v-card data-aos="fade-left" class="mx-auto">
                 <v-img :src="technology" width="330" height="200"></v-img>
               </v-card>
-            </v-hover>
+
           </v-layout>
              <v-layout column justify-center align-center class="message__btn" style="margin-bottom:10%">Read more
                    <v-btn icon>
@@ -92,11 +89,11 @@
             <v-layout column justify-center align-center class="message__items">
             <h2 class="message__item">CONCEPT & DESIGN</h2>
             <v-layout row justify-center align-center>
-                   <v-hover data-aos="fade-right" v-slot:default="{ hover }">
-                      <v-card :elevation="hover ? 12 : 2" class="mx-auto">
-                        <v-img class="img__item" :src="desiging" width="330" height="200"></v-img>
-                      </v-card>
-                   </v-hover>
+
+            <v-card data-aos="fade-right" class="mx-auto">
+                <v-img class="img__item" :src="desiging" width="330" height="200"></v-img>
+            </v-card>
+
                <p class="text-justify" style="width:350px; margin:26px;">
                   Today, we have an opportunity to make authentic learning environments where students 
                   and teachers enjoy their scholarly journeys and graduate to be change agents in their 
