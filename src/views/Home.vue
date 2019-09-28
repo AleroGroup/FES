@@ -214,7 +214,7 @@
 
     <v-layout row justify-center align-center justify-space-around ma-2 class="form"> 
       <v-card flat color="transparent" class="container text-center" v-if="formSubmitted">
-          <v-card-text class="font-weight-medium white--text text--darken-2">Thank you, <span class="name">{{name}}</span>Your form has been submitted.</v-card-text>
+          <v-card-text class="font-weight-medium white--text text--darken-2">Thank you, <span class="name">{{name}}</span> Your form has been submitted.</v-card-text>
       </v-card>
 
 

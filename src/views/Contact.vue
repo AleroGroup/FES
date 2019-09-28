@@ -43,7 +43,7 @@
       >
         <v-card width="auto" height="auto">
         <v-layout justify-center align-center>
-           <v-card-text class="title font-weight-medium text-center pa-4">Thank you, <span class="name font-weight-medium">{{name}}</span>We have received your message and will get back to you</v-card-text>
+           <v-card-text class="title font-weight-medium text-center pa-4">Thank you, <span class="name font-weight-medium">{{name}}</span> We have received your message and will get back to you</v-card-text>
         </v-layout>
       </v-card>
       
