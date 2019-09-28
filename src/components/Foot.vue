@@ -1,6 +1,6 @@
 <template>
   <v-content>
-    <v-layout column justify-center align-center py-2>
+    <v-layout column justify-center align-center py-2 hidden-sm-and-down>
     <v-layout row justify-space-around>
       <div class="footer_item">
             <h4 class="footer__title">Services</h4>
@@ -20,15 +20,16 @@
             <p><a :href="facebook"> Facebook </a></p>
             <p><a :href="linkedIn"> LinkedIn </a></p>
         </div>
-        
-    </v-layout>
-    
+        </v-layout>
     </v-layout>
         
+
      <v-layout row justify-space-around  style="margin-bottom:15px;">
         <v-card flat color="transparent" class="email font-weight-medium">firefly.edtech@gmail.com</v-card>
         <v-card flat color="transparent"  class="rights font-weight-medium">2018-2019 Firefly Edtech Solutions All Rights Reserved</v-card>
     </v-layout>
+
+
   </v-content>
 </template>
 

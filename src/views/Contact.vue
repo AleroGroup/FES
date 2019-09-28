@@ -14,17 +14,19 @@
             <form ref="form" class="question-form" id="contact-form" v-if="!isLoading">
             <v-layout justify-center align-center column>
                <div class="text-danger" v-if="formInvalid">Please fill out all the fields.</div>
-                <v-layout justify-center row>
-                 
-                    <input style="width:250px;" v-model="name" type="text"  placeholder="Name *" required="required" aria-invalid="true" />
-                    <input style="width:240px; margin-left:10px;" v-model="email" type="email" placeholder="Email *">
+                 <v-flex xs12 md4 pa-1>
+                    <input style="width:300px;" v-model="name" type="text"  placeholder="Name *" required="required" aria-invalid="true" />
+                 </v-flex>
+                <v-flex xs12 md4 pa-1>
+                    <input style="width:300px;"  v-model="email" type="email" placeholder="Email *">
+                </v-flex>
+                <v-flex xs12 md4 pa-1>
+                  <input  style="width:300px;" v-model="phone" type="text" placeholder="Phone number *">
+                </v-flex>
+                <v-flex xs12 pa-2>
+                  <textarea style="width:300px;" rows="4" cols="50" v-model="message" type="textarea" placeholder="Your message" class="text-area" />
+                </v-flex>
                 
-                </v-layout>
-
-                <v-layout justify-center column>
-                  <input v-model="phone" type="text" placeholder="Phone number *" style="width:580px">
-                <textarea rows="4" cols="50" v-model="message" type="textarea" placeholder="Your message" class="text-area" />
-                </v-layout>
             </v-layout>
                    <v-layout justify-end>
                    <v-btn color="#2612A6" v-on:click="submit" type="submit" outlined style="border-radius:20px;">send</v-btn>

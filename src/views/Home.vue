@@ -2,7 +2,7 @@
   <v-content>
    <v-img :src="head__title" class="screen">
      <v-content>
-       <v-layout column justify-center style="margin-top:10%">
+       <v-layout column justify-center style="margin-top:10%" hidden-sm-and-down>
          <v-card data-aos="zoom-in" color="transparent" flat id="fes-intro">
             <h1>Bridging the gap between</h1>
             <h2>ecosystems in Education.</h2>
@@ -19,17 +19,118 @@
             </v-card>
             </v-layout>
          </v-layout>
-       </v-layout>    
+       </v-layout>
+
+
+
+      <!-- tablet -->
+      <v-layout column justify-center align-center style="margin-top:10%" hidden-md-and-up>
+        <v-flex xs12 md6 style="max-width:730px">
+         <v-card data-aos="zoom-in" color="transparent" flat id="fes-intro">
+            <h1>Bridging the gap between</h1>
+            <h2>ecosystems in Education.</h2>
+         </v-card>
+         </v-flex>
+       </v-layout>
      </v-content>
      <img>
    </v-img>
-  <v-layout column justify-center id="service-section" style="margin-top:10%">
-    <v-flex xs9 md3 >
+
+
+<!-- mobile -->
+  <v-layout column justify-center align-center id="service-section" style="margin-top:10%">
+    <v-layout justify-center hidden-md-and-up>
+      <v-flex xs9 md3 >
+        <h5 class="text-center" style="margin-top:28%">Consultation & training solutions</h5> 
+      </v-flex>
+    </v-layout>
+    <v-container grid-list-xs style="margin-bottom:5%;">
+      <v-layout row justify-center align-center hidden-md-and-up>
+            <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
+               <v-hover v-slot:default="{ hover }" close-delay="70">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
+                  <v-layout column align-center>
+                      <v-img
+                        width="50"
+                        height="auto"
+                        :src="student"
+                        class='ma-4'
+                        alt="Graduate student"
+                      >
+                      </v-img> 
+                 <v-layout hidden-sm-and-down>
+                   <p class="title service__item-button">Graduate Students & Researchers</p>
+                 </v-layout>
+                      
+                    </v-layout>
+                  </v-card>
+               </v-hover>
+            </v-flex>
+            <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="350">
+              <v-hover v-slot:default="{ hover }" close-delay="70">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
+                  <v-layout column align-center>
+                      <v-img
+                        width="50"
+                        height="auto"
+                        :src="education"
+                        class='ma-4'
+                      >
+                      </v-img> 
+                    <v-layout hidden-sm-and-down>
+                      <p class="title service__item-button">Teachers, Librarians & Faculty </p>
+                    </v-layout>
+                    </v-layout>
+                  </v-card>
+               </v-hover>
+            </v-flex>
+            <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="450">
+               <v-hover v-slot:default="{ hover }" close-delay="70">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
+                  <v-layout column align-center>
+                      <v-img
+                        width="50"
+                        height="auto"
+                        :src="staff"
+                        class='ma-4'
+                      >
+                      </v-img> 
+                     <v-layout hidden-sm-and-down>
+                      <p class="title service__item-button">School Administrators & Staff</p>
+                     </v-layout>
+                    </v-layout>
+                  </v-card>
+               </v-hover>
+            </v-flex>
+            <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="550">
+               <v-hover v-slot:default="{ hover }" close-delay="70">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
+                  <v-layout column align-center>
+                      <v-img
+                        width="50"
+                        height="auto"
+                        :src="manager"
+                        class='ma-4'
+                      >
+                      </v-img> 
+                    <v-layout hidden-sm-and-down>
+                      <p class="title service__item-button">Teachers, Librarians & Faculty </p>
+                    </v-layout>
+                    </v-layout>
+                  </v-card>
+               </v-hover>
+            </v-flex>
+      </v-layout>
+    </v-container>
+
+    <v-layout hidden-md-and-down>
+      <v-flex xs9 md12 >
       <h5 style="margin-top:10%">No matter who you are, FES offers the best <br>
       consultation & training solutions</h5> 
     </v-flex>
-     <v-container grid-list-sm style="margin-bottom:4%">
-      <v-layout row justify-center align-center>
+    </v-layout>
+     <v-container grid-list-sm style="margin-bottom:6%">
+      <v-layout row justify-center align-center hidden-sm-and-down>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
                <v-hover v-slot:default="{ hover }" close-delay="70">
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
@@ -42,7 +143,7 @@
                         alt="Graduate student"
                       >
                       </v-img> 
-                 <v-layout hidden-xs-and-down>
+                 <v-layout hidden-sm-and-down>
                    <p class="title service__item-button">Graduate Students & Researchers</p>
                  </v-layout>
                       
@@ -61,7 +162,7 @@
                         class='ma-4'
                       >
                       </v-img> 
-                    <v-layout hidden-xs-and-down>
+                    <v-layout hidden-sm-and-down>
                       <p class="title service__item-button">Teachers, Librarians & Faculty </p>
                     </v-layout>
                     </v-layout>
@@ -79,7 +180,7 @@
                         class='ma-4'
                       >
                       </v-img> 
-                     <v-layout hidden-xs-and-down>
+                     <v-layout hidden-sm-and-down>
                       <p class="title service__item-button">School Administrators & Staff</p>
                      </v-layout>
                     </v-layout>
@@ -97,7 +198,7 @@
                         class='ma-4'
                       >
                       </v-img> 
-                    <v-layout hidden-xs-and-down>
+                    <v-layout hidden-sm-and-down>
                       <p class="title service__item-button">Teachers, Librarians & Faculty </p>
                     </v-layout>
                     </v-layout>
@@ -108,7 +209,7 @@
     </v-container>
    </v-layout>
  
-  <v-layout row wrap>
+  <v-layout row wrap hidden-sm-and-down>
     <v-img :src="form__img" row id="questions-section">
 
     <v-layout row justify-center align-center justify-space-around ma-2 class="form"> 

@@ -22,10 +22,10 @@
    </v-img>
   
   <div id="fes-motivation">
-   <v-layout column justify-center align-center  style="margin-top:10%" hidden-xs-and-down>
+   <v-layout column justify-center align-center style="margin-top:10%" hidden-xs-only>
      <h2 data-aos="fade-up" style="margin-top:4%">Our Motivation</h2>
    </v-layout>
-    <v-layout  row justify-space-around class="motivation__items" hidden-xs-and-down>
+    <v-layout  row justify-space-around class="motivation__items" hidden-xs-only style="margin-bottom:100px;">
           <v-card flat color="transparent" class="motivation__item text-center" data-aos="fade-up"  data-aos-delay="250">
              <img :src="journy">
              <p class="btn">OUR JOURNEY</p>
@@ -39,10 +39,11 @@
             <p class="btn">CONCEPT & DESIGN</p>
           </v-card>
       </v-layout>
-    </div>
+    </div >
+    
         <v-layout  column justify-center align-center>
             <section id='fes-message'>
-            <v-layout column justify-center align-center class="message__items">
+            <v-layout column justify-center align-center class="message__items ma-3">
                 <h2 class="message__item">OUR JOURNEY</h2>
                 <v-layout  row justify-center align-center>
                       <v-card data-aos="fade-right" class="mx-auto">
@@ -52,41 +53,90 @@
                     When i learned accounting at college, it was not a nice experience. The teacher adopted a more teacher-
                     centered approach, where he was in full control of the class. He was the only one who was responsible for
                     imparting knowledge and he had always the final word. We, the students were spectators in class. It was
-                    mainly,"the teacher talks... 
+                    mainly,
+                 </p>
+              </v-layout>
+               <v-layout  row justify-center align-center v-if="ifClickedJourney">
+                  <p data-aos="fade-down" data-aos-duration="600" class="text-justify" style="width:700px; margin:26px;">
+                   “the teacher talks and we note down” with limited opportunities to comment or respond. His way of teaching 
+                   accounting was not enjoyable at all. I had difficulties grasping the content. My parents were assured it would 
+                   succeed because I was an exemplary student at mathematics in my A-levels.
+                   <br /><br />
+                   The worst part was that the scenario had not changed fifteen years later when I got the opportunity to work at 
+                   a private university famous for its state-of-the-art infrastructure and ambience for student learning. I had to 
+                   teach student in the traditional ways and efforts to follow up with administrators were curtailed by slow 
+                   bureaucratic operations. I was also shocked that the new ICT infrastructure had not been adopted or aligned to 
+                   facilitate and ease learning and teaching for the 21st century student graduate and future professional. 
+                   Accounting graduates were met with expansive trainings upon reaching their workplaces. Various employers have 
+                   upgraded their operations to meet the fast digitalized accounting and financial processes in the markets. 
+                   Even, several, employers would rant on social media about costly on-job trainings for digital skills they 
+                   expected university colleges have instructed and equipped incoming fresh graduates.
+                   <br /><br />
+                   When I came into the classroom, the most innovative approach to help students grasp the knowledge of the subject 
+                   matter was by preparing power-point presentations and short videos. Sometimes, I would give examples of an industrial 
+                   practice that I had encountered during my ten-year banking experience. Nonetheless, I didn’t explain most concepts, 
+                   but rather, I was in a hurry to complete the syllabus. Often, students were expected to copy what I read out and 
+                   explained for the purpose of passing exams. Sometimes, demotivated students gave an excuse not to attend the remaining 
+                   session in class, during the half-time break. It was frustrating using “a-square-peg-in-a-round-hole” methods of learning 
+                   and teaching. I barely achieve the learning objectives of the accounting students, the external accounting qualification 
+                   examiner and the university college."
                  </p>
                  
               </v-layout>
-                <v-layout column justify-center align-center class="message__btn" style="margin-bottom:10%">Read more
-                   <v-btn icon>
-                      <v-icon color="#2612A6" class="font-weight-bold" width="170px">{{ arrowDown }}</v-icon>
-                   </v-btn>
-                </v-layout>
+              <v-layout v-if="isHiddenJourney" column justify-center align-center class="message__btn" style="margin-bottom:10%" hidden-sm-and-down>Read more
+                <v-btn icon @click="ifClickedJourney = !ifClickedJourney; isHiddenJourney = !isHiddenJourney">
+                  <v-icon color="#2612A6" class="font-weight-bold" width="170px">{{ arrowDown }}</v-icon>
+                </v-btn>
+              </v-layout>
+
             </v-layout>
         </section>
+
         <section id='fes-message'>
-            <v-layout column justify-center align-center class="message__items">
+            <v-layout column justify-center align-center class="message__items ma-3">
             <h2 class="message__item">OUR CRUCIBLE</h2>
             <v-layout row justify-center align-center>
               <p class="text-justify" style="width:350px; margin:26px;">
                    Technology is the best approach that a teacher and student can use to implement a transformation in
                    achieving their learning objectives. The university college ICT infrastructure available was an Learning
                    Management System that was used to post students' grades, list reading materials and update crucial
-                   communication to teachers and students...
+                   communication to teachers and students;
               </p>
               <v-card data-aos="fade-left" class="mx-auto">
                 <v-img :src="technology" width="330" height="200"></v-img>
               </v-card>
-
           </v-layout>
-             <v-layout column justify-center align-center class="message__btn" style="margin-bottom:10%">Read more
-                   <v-btn icon>
-                      <v-icon color="#2612A6" class="font-weight-bold" width="170px">{{ arrowDown }}</v-icon>
-                   </v-btn>
-                </v-layout>
-            </v-layout>
+
+           <v-layout  row justify-center align-center v-if="ifClickedCrucible">
+                  <p data-aos="fade-down" data-aos-duration="600" class="text-justify" style="width:700px; margin:26px;">
+                   a universal email address domain given upon joining the university; a huge team of computer science and 
+                   IT staff to support students’ and teachers’ concerns on about the application of their personal digital 
+                   devices during on-campus and off –campus assignments and obtain authorized access to ICT facilities on 
+                   campus.
+
+                   <br /><br />
+                   Thus far, student-centered learning approach is yet to be adopted at the university; there is limited 
+                   access to other information outside the reading materials provided within the syllabus that would provide 
+                   a student with different ways to learn a concept; students are exposed to a variety of resources: 
+                   Computers, laptops, tablets and other forms of technology that they often use for social media updates 
+                   and not learning; and classrooms are yet to be a space integrated with technologies that makes it fun and 
+                   engaging for students to learn. Often, annual financial and operations reports present the years the ICT 
+                   infrastructure was introduced and has been in existence in a university – a good capital investment, 
+                   making it stand out from its competition. Unfortunately, there is little reporting on the impact and 
+                   significance of the technology to existing operations and even financial successes. This denies the 
+                   investor, teachers, students an opportunity to experience the unprecedented dimensions of direct of 
+                   ICT in daily teaching and learning tasks and activities.                
+                  </p>
+              </v-layout>
+              <v-layout v-if="isHiddenCrucible" column justify-center align-center class="message__btn" style="margin-bottom:10%" hidden-sm-and-down>Read more
+                <v-btn icon @click="ifClickedCrucible = !ifClickedCrucible; isHiddenCrucible = !isHiddenCrucible">
+                  <v-icon color="#2612A6" class="font-weight-bold" width="170px">{{ arrowDown }}</v-icon>
+                </v-btn>
+              </v-layout>
+          </v-layout>
         </section>
         <section id='fes-message' style="margin-bottom:20%">
-            <v-layout column justify-center align-center class="message__items">
+            <v-layout column justify-center align-center class="message__items ma-3">
             <h2 class="message__item">CONCEPT & DESIGN</h2>
             <v-layout row justify-center align-center>
 
@@ -101,11 +151,11 @@
                   of technologies and tools can be fit for educators and students to meet their learning...
                </p>
             </v-layout>
-                <v-layout column justify-center align-center class="message__btn" style="margin-bottom:13%">Read more
-                   <v-btn icon>
-                      <v-icon color="#2612A6" class="font-weight-bold" width="170px">{{ arrowDown }}</v-icon>
-                   </v-btn>
-                </v-layout>
+                <v-layout v-if="isHiddenDesign" column justify-center align-center class="message__btn" style="margin-bottom:10%" hidden-sm-and-down>Read more
+                <v-btn icon @click="ifClickedDesign = !ifClickedDesign; isHiddenDesign = !isHiddenDesign">
+                  <v-icon color="#2612A6" class="font-weight-bold" width="170px">{{ arrowDown }}</v-icon>
+                </v-btn>
+              </v-layout>
             </v-layout>
         </section>
         </v-layout>
@@ -114,7 +164,7 @@
 </template>
 
 <script>
-import { mdiChevronDown } from '@mdi/js'
+import { mdiChevronDown,mdiChevronUp } from '@mdi/js'
 export default {
   name:'contact',
   data: () => ({
@@ -122,6 +172,7 @@ export default {
 
      //icons
      arrowDown: mdiChevronDown,
+     arrowUp: mdiChevronUp,
 
      //images
      head__title:'https://ik.imagekit.io/qpt2onjfe/fes/background_HRJ60zWCxI.svg',
@@ -132,6 +183,12 @@ export default {
      technology:'https://ik.imagekit.io/qpt2onjfe/fes/address-adult-african-1061576_b8_cCtAO6.jpg',
      desiging:'https://ik.imagekit.io/qpt2onjfe/fes/agenda-concept-development-7376_oKaUWwiqNh.jpg',
 
+    // content
+    ifClickedJourney: false,
+    isHiddenJourney: true,
+
+    ifClickedCrucible: false,
+    isHiddenCrucible: true,
   }),
     head: {
         title: function () {
@@ -152,11 +209,7 @@ export default {
 .screen{
   height: 22%;
 }
-#fes-motivation {
-    background: #fdf6d662;
-    height: 420px;
-    margin-bottom: 10%;
-}
+
 #fes-intro > h1 {
     text-align: center;
     color: grey;
