@@ -42,7 +42,7 @@
                         alt="Graduate student"
                       >
                       </v-img> 
-                 <v-layout hidden-sm-and-down>
+                 <v-layout hidden-xs-and-down>
                    <p class="title service__item-button">Graduate Students & Researchers</p>
                  </v-layout>
                       
@@ -61,7 +61,7 @@
                         class='ma-4'
                       >
                       </v-img> 
-                    <v-layout hidden-sm-and-down>
+                    <v-layout hidden-xs-and-down>
                       <p class="title service__item-button">Teachers, Librarians & Faculty </p>
                     </v-layout>
                     </v-layout>
@@ -79,7 +79,7 @@
                         class='ma-4'
                       >
                       </v-img> 
-                     <v-layout hidden-sm-and-down>
+                     <v-layout hidden-xs-and-down>
                       <p class="title service__item-button">School Administrators & Staff</p>
                      </v-layout>
                     </v-layout>
@@ -97,7 +97,7 @@
                         class='ma-4'
                       >
                       </v-img> 
-                    <v-layout hidden-sm-and-down>
+                    <v-layout hidden-xs-and-down>
                       <p class="title service__item-button">Teachers, Librarians & Faculty </p>
                     </v-layout>
                     </v-layout>
@@ -107,17 +107,21 @@
       </v-layout>
     </v-container>
    </v-layout>
-  <v-img :src="form__img" row id="questions-section">
-    
-    <v-layout row justify-center align-center justify-space-around ma-5 class="form"> 
-      <v-card class="container text-center" v-if="formSubmitted">
-      <v-card-text class="font-weight-medium orange--text text--darken-2">Thank you for contacting me, <span class="name">{{name}}</span>. I have received your message and will get back to you soon.</v-card-text>
-    </v-card>
+ 
+  <v-layout row wrap>
+    <v-img :src="form__img" row id="questions-section">
+
+    <v-layout row justify-center align-center justify-space-around ma-2 class="form"> 
+      <v-card flat color="transparent" class="container text-center" v-if="formSubmitted">
+          <v-card-text class="font-weight-medium white--text text--darken-2">Thank you, <span class="name">{{name}}</span>Your form has been submitted.</v-card-text>
+      </v-card>
+
 
       <v-card color="transparent" :class="{ formSubmitted: formSubmitted }" id="contact-form" v-if="!isLoading" flat class="form-details">
-        <div class="questions-section_item details white--text display-1">
-            <h5>Have any questions? <br>
-            Or need any assistance?</h5>
+        <div class="questions-section_item details white--text">
+            <h5>Train your people. <br>
+            Get research done right. <br>
+            Measure results. </h5>
         </div>
         </v-card>
         <v-card color="transparent" flat class="questions-section_item form" >
@@ -125,9 +129,8 @@
                <div class="text-danger" v-if="formInvalid">Please fill out all the fields.</div>
                 <input v-model="name" type="text"  placeholder="Name *" required="required" aria-invalid="true" />
                 <input v-model="email" type="email" placeholder="Email *">
-                <input v-model="message" type="textarea" placeholder="Your message" class="text-area">
                 <v-layout justify-end>
-                   <v-btn color="white" v-on:click="submit" type="submit" outlined>send</v-btn>
+                   <v-btn color="white" v-on:click="submit" type="submit" outlined>Get Started</v-btn>
                 </v-layout>
             </form>
         </v-card>
@@ -142,8 +145,8 @@
       </v-flex>
       </v-layout>
       <img>
-</v-img>
-
+  </v-img>
+    </v-layout>
   </v-content>
 </template>
 
@@ -203,11 +206,10 @@ export default {
       var template_params = {
       "reply_to": this.email,
       "from_name": this.name,
-      "message_html": this.message
 }
 
       event.preventDefault()
-      if (this.email !== null && this.name !== null && this.message !== null) {
+      if (this.email !== null && this.name !== null) {
         this.isLoading = true
         this.formSubmitted = false
         emailjs.init('user_c0Q2llk67OnYN7obTBRkR')
@@ -311,9 +313,9 @@ export default {
 
 #questions-section {
    background:#2612A6;
-   padding-top:2px;
+   padding-top:1px;
    width:100%;    
-   height:390px;
+   height:300px;
    vertical-align: middle;
     
 }
@@ -323,21 +325,25 @@ export default {
     max-width: 500px;
     padding:18px 80px 18px 20px;
     background: rgb(148, 177, 245);
-    height: 2rem;
+    height: 1.2rem;
     border-radius: 4px;
     margin-top: 0;
-    margin-bottom:10px;
+    margin-bottom:8px;
+    font-size: 16px;
     
 }
 .question-form button {
-    border-radius: 14px;
+    border-radius: 16px;
    
 }
 .question-form .text-area {
     padding-bottom: 60px;
 }
+.questions-section_item{
+  font-size: 25px;
+
+}
 .form{
     margin-top: 6%;
 }
-
 </style>
