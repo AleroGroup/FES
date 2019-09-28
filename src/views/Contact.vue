@@ -98,7 +98,7 @@ export default {
 
   mounted () {
     this.$nextTick(function () {
-      let emailJSscript = document.createElement('script')
+      const emailJSscript = document.createElement('script')
       emailJSscript.setAttribute('src', 'https://cdn.emailjs.com/sdk/2.2.4/email.min.js')
       document.head.appendChild(emailJSscript)
     })
@@ -113,7 +113,7 @@ export default {
       "message_html": this.message
 
 }
-
+/* eslint-disable */
 const service_id = "default_service";
 const template_id = "template_ukUBbp7Z";
       event.preventDefault()

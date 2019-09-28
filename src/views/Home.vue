@@ -296,7 +296,7 @@ export default {
 
   mounted () {
     this.$nextTick(function () {
-      let emailJSscript = document.createElement('script')
+      const emailJSscript = document.createElement('script')
       emailJSscript.setAttribute('src', 'https://cdn.emailjs.com/sdk/2.2.4/email.min.js')
       document.head.appendChild(emailJSscript)
     })
@@ -306,9 +306,12 @@ export default {
     submit () {
       var template_params = {
       "reply_to": this.email,
-      "from_name": this.name,
+      "name": this.name,
 }
+/* eslint-disable */
 
+const service_id = "default_service";
+      const template_id = "contacts";
       event.preventDefault()
       if (this.email !== null && this.name !== null) {
         this.isLoading = true
@@ -316,9 +319,9 @@ export default {
         emailjs.init('user_c0Q2llk67OnYN7obTBRkR')
         this.contact_number = Math.random() * 100000 | 0
         emailjs.send(
-          'test',
-          'template_ukUBbp7Z',
-           template_params
+          service_id,
+          template_id,
+          template_params
         ).then((response) => {
           this.formSubmitted = true
           this.isLoading = false
