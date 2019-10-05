@@ -7,7 +7,7 @@
           <v-spacer/>
           <v-layout row  justify-center hidden-xs-only>
              <router-link small class="main-nav__item text-uppercase" to="/" text exact active-class="">Home</router-link>
-             <router-link small class="main-nav__item text-uppercase" to="/aboutus" text exact>About us</router-link>
+             <router-link small class="main-nav__item text-uppercase" to="/about" text exact>About us</router-link>
              <router-link small class="main-nav__item text-uppercase" to="/team" text exact>Team</router-link>
             <router-link small class="main-nav__item text-uppercase" to="/contact" text exact>Contact</router-link>
 

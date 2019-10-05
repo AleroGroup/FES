@@ -6,6 +6,12 @@ import About from './views/About.vue'
 import Team from './views/Team.vue'
 import Contact from './views/Contact.vue'
 
+
+//about page
+import Journey from './views/motivation/Journey.vue'
+import Crucible from './views/motivation/Crucible.vue'
+import ConceptDesign from './views/motivation/ConceptDesign.vue'
+
 Vue.use(Router)
 Vue.use(VueHead)
 
@@ -19,10 +25,27 @@ export default new Router({
       component: Home
     },
     {
-      path: '/aboutus',
+      path: '/about',
       name: 'about',
       component: About
     },
+    {
+      path: '/about/journey',
+      name: 'journey',
+      component: Journey
+    },
+    {
+      path: '/about/crucible',
+      name: 'crucible',
+      component: Crucible
+    },
+    {
+      path: '/about/conceptdesign',
+      name: 'conceptdesign',
+      component: ConceptDesign
+    },
+
+
     {
       path: '/team',
       name: 'team',

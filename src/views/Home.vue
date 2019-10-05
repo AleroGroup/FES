@@ -428,7 +428,7 @@ const service_id = "default_service";
     width: 100vw;
     max-width: 500px;
     padding:18px 80px 18px 20px;
-    background: rgb(148, 177, 245);
+    background: #cbd9fa;
     height: 1.2rem;
     border-radius: 4px;
     margin-top: 0;
@@ -452,5 +452,8 @@ const service_id = "default_service";
 }
 .form{
     margin-top: 6%;
+}
+::placeholder{
+  color: #2612A6
 }
 </style>
