@@ -47,7 +47,7 @@
     <v-container grid-list-xs style="margin-bottom:5%;">
       <v-layout row justify-center align-center hidden-md-and-up>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
-               <v-hover v-slot:default="{ hover }" close-delay="70">
+               <v-hover v-slot:default="{ hover }" close-delay="70">  </v-hover>
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
                   <v-layout column align-center>
                       <v-img
@@ -64,10 +64,10 @@
                       
                     </v-layout>
                   </v-card>
-               </v-hover>
+             
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="350">
-              <v-hover v-slot:default="{ hover }" close-delay="70">
+              <v-hover v-slot:default="{ hover }" close-delay="70"> </v-hover>
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
                   <v-layout column align-center>
                       <v-img
@@ -82,10 +82,10 @@
                     </v-layout>
                     </v-layout>
                   </v-card>
-               </v-hover>
+              
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="450">
-               <v-hover v-slot:default="{ hover }" close-delay="70">
+               <v-hover v-slot:default="{ hover }" close-delay="70"> </v-hover>
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
                   <v-layout column align-center>
                       <v-img
@@ -100,10 +100,10 @@
                      </v-layout>
                     </v-layout>
                   </v-card>
-               </v-hover>
+              
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="550">
-               <v-hover v-slot:default="{ hover }" close-delay="70">
+               <v-hover v-slot:default="{ hover }" close-delay="70">  </v-hover>
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
                   <v-layout column align-center>
                       <v-img
@@ -118,7 +118,7 @@
                     </v-layout>
                     </v-layout>
                   </v-card>
-               </v-hover>
+             
             </v-flex>
       </v-layout>
     </v-container>
@@ -132,7 +132,7 @@
      <v-container grid-list-sm style="margin-bottom:6%">
       <v-layout row justify-center align-center hidden-sm-and-down>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
-               <v-hover v-slot:default="{ hover }" close-delay="70">
+               <v-hover v-slot:default="{ hover }" close-delay="70"></v-hover>
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
                   <v-layout column align-center>
                       <v-img
@@ -149,10 +149,10 @@
                       
                     </v-layout>
                   </v-card>
-               </v-hover>
+               
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="350">
-              <v-hover v-slot:default="{ hover }" close-delay="70">
+              <v-hover v-slot:default="{ hover }" close-delay="70"> </v-hover>
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
                   <v-layout column align-center>
                       <v-img
@@ -167,10 +167,10 @@
                     </v-layout>
                     </v-layout>
                   </v-card>
-               </v-hover>
+              
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="450">
-               <v-hover v-slot:default="{ hover }" close-delay="70">
+               <v-hover v-slot:default="{ hover }" close-delay="70"> </v-hover>
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
                   <v-layout column align-center>
                       <v-img
@@ -185,10 +185,10 @@
                      </v-layout>
                     </v-layout>
                   </v-card>
-               </v-hover>
+              
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="550">
-               <v-hover v-slot:default="{ hover }" close-delay="70">
+               <v-hover v-slot:default="{ hover }" close-delay="70"> </v-hover>
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
                   <v-layout column align-center>
                       <v-img
@@ -203,7 +203,7 @@
                     </v-layout>
                     </v-layout>
                   </v-card>
-               </v-hover>
+              
             </v-flex>
       </v-layout>
     </v-container>
