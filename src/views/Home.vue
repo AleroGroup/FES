@@ -15,7 +15,7 @@
             </v-card>
             <v-layout hidden-xs-only>
             <v-card  data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500" color="transparent" flat id="fes-intro">
-              <v-btn flat class="connect__button" color="#fda503">CONNECT WITH US</v-btn>
+              <v-btn flat class="connect__button" color="#Eb1204">CONNECT WITH US</v-btn>
             </v-card>
             </v-layout>
          </v-layout>
