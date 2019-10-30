@@ -60,7 +60,6 @@ export default {
   name:'contact',
   data: () => ({
      title:"Contact Us",
-
      //images
      head__title:'https://ik.imagekit.io/qpt2onjfe/fes/background_HRJ60zWCxI.svg',
      footer__link: 'https://ik.imagekit.io/qpt2onjfe/fes/pluto-message-sent-1_Cz5tBH1Ol.png',

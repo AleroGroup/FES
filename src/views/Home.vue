@@ -15,7 +15,7 @@
             </v-card>
             <v-layout hidden-xs-only>
             <v-card  data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500" color="transparent" flat id="fes-intro">
-              <v-btn flat class="connect__button" color="#fda503">CONNECT WITH US</v-btn>
+              <v-btn rounded flat large class="connect__button" color="#D11204">CONNECT WITH US</v-btn>
             </v-card>
             </v-layout>
          </v-layout>
@@ -362,7 +362,7 @@ const service_id = "default_service";
 }
 .connect__button {
     text-decoration: none;
-    background:orange;
+    background: #EB1204;
     color: white;
     border-radius: 20px;
     padding: 10px 26px;
@@ -404,14 +404,14 @@ const service_id = "default_service";
     text-decoration: none;
     border-radius: 10px;
     padding: 10px 16px;
-    color: #2612A6;
-    font-weight:bold; 
+    color: #EB1204;
+    font-weight:700; 
 }
 .service__card {
     text-decoration: none;
     border-radius: 10px;
     border: 3px solid #2612A6;
-    font-weight:bold; 
+    font-weight:600; 
     background-color: rgba(255, 255, 255, 0.068);
 }
 
