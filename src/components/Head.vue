@@ -44,7 +44,11 @@ import { mdiMenu } from '@mdi/js'
 
 export default {
   data: () => ({
+<<<<<<< HEAD
    title__logo:"https://ik.imagekit.io/qpt2onjfe/fes/Logo_P9mTYMe2S.png",
+=======
+   title__logo:"https://ik.imagekit.io/qpt2onjfe/fes/Logo_N-oJ4sdWk6_1_d_kuabPqV.svg",
+>>>>>>> c107eceb2c7d0ac6ceee16964b3d621a3485e76b
     svgPath: mdiMenu,
     links: [
       { title: 'Home', to: '/' },
@@ -77,7 +81,11 @@ a.main-nav__item  {
 }
 
 a:hover, .router-link-exact-active {
+<<<<<<< HEAD
     border-bottom: 2px solid #EB1204 !important;
+=======
+    border-bottom: 2px solid #eb1204 !important;
+>>>>>>> c107eceb2c7d0ac6ceee16964b3d621a3485e76b
 }
 
 </style>

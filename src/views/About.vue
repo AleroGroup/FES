@@ -287,9 +287,9 @@ export default {
 
      //images
      head__title:'https://ik.imagekit.io/qpt2onjfe/fes/background_HRJ60zWCxI.svg',
-     journy: 'https://ik.imagekit.io/qpt2onjfe/fes/journy-icon_XNqELlZDr.svg',
-     crus:'https://ik.imagekit.io/qpt2onjfe/fes/crus-icon_Lxqq9-LGCr.svg',
-     design:'https://ik.imagekit.io/qpt2onjfe/fes/design-icon_4d7CzCiAy.svg',
+     journy: 'https://ik.imagekit.io/qpt2onjfe/Group_1_MQVSI-d1V.svg',
+     crus:'https://ik.imagekit.io/qpt2onjfe/Group_1_p90BwlRpj.svg',
+     design:'https://ik.imagekit.io/qpt2onjfe/Group_1_x38b2IjzX.svg',
      journey:'https://ik.imagekit.io/qpt2onjfe/0_Pz9kyUGrZ.jpeg',
      technology:'https://ik.imagekit.io/qpt2onjfe/fes/address-adult-african-1061576_b8_cCtAO6.jpg',
      desiging:'https://ik.imagekit.io/qpt2onjfe/fes/agenda-concept-development-7376_oKaUWwiqNh.jpg',
@@ -349,7 +349,7 @@ export default {
 
 p.btn {
     padding: 10px 30px !important;
-    background:#fda503;
+    background:#EB1204;
     height: 3rem;
     border-radius: 25px !important;
     color: #fff;

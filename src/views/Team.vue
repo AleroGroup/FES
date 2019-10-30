@@ -105,7 +105,7 @@ export default {
          style: 'border-radius:100px;width:200px;height:200px'
        },
        {
-         url: 'https://ik.imagekit.io/qpt2onjfe/fes/Group_9_Zqsgxo7jCi.svg',
+         url: 'https://ik.imagekit.io/qpt2onjfe/fes/evans_Iezo4QI7x.jpeg',
          name: 'Evans Kimathi',
          title: 'Designer and also works as Frontend Developer',
          style: 'border-radius:100px;width:200px;height:200px'
