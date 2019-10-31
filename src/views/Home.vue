@@ -41,33 +41,37 @@
   <v-layout column justify-center align-center id="service-section" style="margin-top:10%">
     <v-layout justify-center hidden-md-and-up>
       <v-flex xs9 md3 >
-        <h5 class="text-center" style="margin-top:28%">Consultation & training solutions</h5> 
+        <h5 class="text-center" style="margin-top:28%">Consultation & training services</h5> 
       </v-flex>
     </v-layout>
     <v-container grid-list-xs style="margin-bottom:5%;">
       <v-layout row justify-center align-center hidden-md-and-up>
             <!-- Services to the Graduate students -->
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
-               <v-hover v-slot:default="{ hover }" close-delay="70">  </v-hover>
-                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
-                  <v-layout column align-center>
-                      <v-img
-                        width="50"
-                        height="auto"
-                        :src="student"
-                        class='ma-4'
-                        alt="Graduate student"
-                      >
-                      </v-img> 
-                 <v-layout hidden-sm-and-down>
-                   <p class="title service__item-button">Graduate Students & Researchers</p>
-                 </v-layout>        
-              </v-layout>
-                  </v-card>
+               <v-hover v-slot:default="{ hover }" close-delay="70"> 
+                  <router-link to="/services/to-graduate-students-researchers">
+                    <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
+                      <v-layout column align-center>
+                        <v-img
+                          width="50"
+                          height="auto"
+                          :src="student"
+                          class='ma-4'
+                          alt="Graduate student"
+                        >
+                        </v-img> 
+                        <v-layout hidden-sm-and-down>
+                        <p class="title service__item-button" style="text-decoration:none;">Graduate Students & Researchers</p>
+                        </v-layout>        
+                      </v-layout>
+                     </v-card>
+                    </router-link>
+                </v-hover>
             </v-flex>
 
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="350">
-              <v-hover v-slot:default="{ hover }" close-delay="70"> </v-hover>
+              <v-hover v-slot:default="{ hover }" close-delay="70"> 
+                <router-link to="/services/to-teachers-librarians-and-faculty">
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
                   <v-layout column align-center>
                       <v-img
@@ -82,10 +86,13 @@
                     </v-layout>
                     </v-layout>
                   </v-card>
-              
+                </router-link>
+              </v-hover>
             </v-flex>
+
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="450">
-               <v-hover v-slot:default="{ hover }" close-delay="70"> </v-hover>
+               <v-hover v-slot:default="{ hover }" close-delay="70">
+               <router-link to="/services/to-school-administrators-and-staff">
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
                   <v-layout column align-center>
                       <v-img
@@ -100,10 +107,13 @@
                      </v-layout>
                     </v-layout>
                   </v-card>
-              
+               </router-link>
+              </v-hover>
             </v-flex>
+
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="550">
-               <v-hover v-slot:default="{ hover }" close-delay="70">  </v-hover>
+               <v-hover v-slot:default="{ hover }" close-delay="70">  
+               <router-link to="/services/to-business-owners">
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
                   <v-layout column align-center>
                       <v-img
@@ -118,21 +128,23 @@
                     </v-layout>
                     </v-layout>
                   </v-card>
-             
+                </router-link>
+              </v-hover>
             </v-flex>
       </v-layout>
     </v-container>
 
-    <v-layout hidden-md-and-down>
+    <v-layout hidden-sm-and-down justify-center align-center>
       <v-flex xs9 md12 >
       <h5 style="margin-top:10%">No matter who you are, FES offers the best <br>
-      consultation & training solutions</h5> 
+      consultation & training solutions</h5>
     </v-flex>
     </v-layout>
      <v-container grid-list-sm style="margin-bottom:6%">
       <v-layout row justify-center align-center hidden-sm-and-down>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
-               <v-hover v-slot:default="{ hover }" close-delay="70"></v-hover>
+              <router-link to="/services/to-graduate-students-researchers">
+               <v-hover v-slot:default="{ hover }" close-delay="70">
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
                   <v-layout column align-center>
                       <v-img
@@ -143,16 +155,19 @@
                         alt="Graduate student"
                       >
                       </v-img> 
-                 <v-layout hidden-sm-and-down>
-                   <p class="title service__item-button">Graduate Students & Researchers</p>
-                 </v-layout>
-                      
+                    <v-layout hidden-sm-and-down>
+                       <p class="title service__item-button">Graduate Students & Researchers</p>
                     </v-layout>
-                  </v-card>
-               
+                    </v-layout>
+                </v-card>
+             
+            </v-hover>  
+            </router-link>         
             </v-flex>
+
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="350">
-              <v-hover v-slot:default="{ hover }" close-delay="70"> </v-hover>
+              <v-hover v-slot:default="{ hover }" close-delay="70"> 
+                <router-link to="/services/to-teachers-librarians-and-faculty">
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
                   <v-layout column align-center>
                       <v-img
@@ -167,10 +182,13 @@
                     </v-layout>
                     </v-layout>
                   </v-card>
-              
+                </router-link>
+              </v-hover>
             </v-flex>
+
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="450">
-               <v-hover v-slot:default="{ hover }" close-delay="70"> </v-hover>
+               <v-hover v-slot:default="{ hover }" close-delay="70">
+                 <router-link to="/services/to-school-administrators-and-staff">
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
                   <v-layout column align-center>
                       <v-img
@@ -185,10 +203,12 @@
                      </v-layout>
                     </v-layout>
                   </v-card>
-              
+                 </router-link>
+               </v-hover>
             </v-flex>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="550">
-               <v-hover v-slot:default="{ hover }" close-delay="70"> </v-hover>
+               <v-hover v-slot:default="{ hover }" close-delay="70"> 
+                 <router-link to="/services/to-business-owners">
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
                   <v-layout column align-center>
                       <v-img
@@ -203,7 +223,8 @@
                     </v-layout>
                     </v-layout>
                   </v-card>
-              
+                 </router-link>
+              </v-hover>
             </v-flex>
       </v-layout>
     </v-container>
@@ -401,18 +422,22 @@ const service_id = "default_service";
     margin-top:0;
 }
 .service__item-button {
-    text-decoration: none;
+    text-decoration: none !important;
     border-radius: 10px;
     padding: 10px 16px;
     color: #2612A6;
     font-weight:700; 
+}
+
+ a {
+  text-decoration: none !important;
 }
 .service__card {
     text-decoration: none;
     border-radius: 10px;
     border: 3px solid #2612A6;
     font-weight:600; 
-    background-color: rgba(255, 255, 255, 0.068);
+    background-color: rgba(255, 255, 255, 0.007);
 }
 
 #questions-section {
@@ -456,4 +481,5 @@ const service_id = "default_service";
 ::placeholder{
   color: #2612A6
 }
+
 </style>

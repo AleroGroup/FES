@@ -2,14 +2,18 @@
   <v-content style="margin-top:3%;">
         <v-toolbar dense flat color="transparent">
           <v-toolbar-title style="margin-left:2%;">
+            <router-link to='/'>
             <v-img :src="title__logo"></v-img>
+            </router-link>
           </v-toolbar-title>
           <v-spacer/>
           <v-layout row  justify-center hidden-xs-only>
              <router-link small class="main-nav__item text-uppercase" to="/" text exact active-class="">Home</router-link>
              <router-link small class="main-nav__item text-uppercase" to="/about" text exact>About us</router-link>
+             <router-link small class="main-nav__item text-uppercase" to="/services" text exact>Our Services</router-link>
              <router-link small class="main-nav__item text-uppercase" to="/team" text exact>Team</router-link>
             <router-link small class="main-nav__item text-uppercase" to="/contact" text exact>Contact</router-link>
+
 
           </v-layout>
 
@@ -51,8 +55,10 @@ export default {
     links: [
       { title: 'Home', to: '/' },
       { title: 'About us', to: '/aboutus' },
+      { title: 'Our Services', to: '/services' },
       { title: 'contact', to: '/contact' },
-       { title: 'Our Team', to: '/team' }
+      { title: 'Our Team', to: '/team' }
+     
     ]
   })
 }
