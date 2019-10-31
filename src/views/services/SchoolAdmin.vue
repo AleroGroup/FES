@@ -59,7 +59,7 @@
                     </p>
                 </div> 
             </v-layout>
-            <img :src="image" class="image">
+            <!-- <img :src="image" class="image"> -->
         </v-layout>
     </v-layout>
     <img/> 
