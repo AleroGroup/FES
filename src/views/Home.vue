@@ -15,11 +15,7 @@
             </v-card>
             <v-layout hidden-xs-only>
             <v-card  data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500" color="transparent" flat id="fes-intro">
-<<<<<<< HEAD
-              <v-btn rounded flat large class="connect__button" color="#D11204">CONNECT WITH US</v-btn>
-=======
               <v-btn flat class="connect__button" color="#Eb1204">CONNECT WITH US</v-btn>
->>>>>>> c107eceb2c7d0ac6ceee16964b3d621a3485e76b
             </v-card>
             </v-layout>
          </v-layout>
@@ -50,6 +46,7 @@
     </v-layout>
     <v-container grid-list-xs style="margin-bottom:5%;">
       <v-layout row justify-center align-center hidden-md-and-up>
+            <!-- Services to the Graduate students -->
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
                <v-hover v-slot:default="{ hover }" close-delay="70">  </v-hover>
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
@@ -64,12 +61,11 @@
                       </v-img> 
                  <v-layout hidden-sm-and-down>
                    <p class="title service__item-button">Graduate Students & Researchers</p>
-                 </v-layout>
-                      
-                    </v-layout>
+                 </v-layout>        
+              </v-layout>
                   </v-card>
-             
             </v-flex>
+
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="350">
               <v-hover v-slot:default="{ hover }" close-delay="70"> </v-hover>
                 <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="80">
@@ -118,7 +114,7 @@
                       >
                       </v-img> 
                     <v-layout hidden-sm-and-down>
-                      <p class="title service__item-button">Teachers, Librarians & Faculty </p>
+                      <p class="title service__item-button">Consultancy Services for Business Owners </p>
                     </v-layout>
                     </v-layout>
                   </v-card>
@@ -203,7 +199,7 @@
                       >
                       </v-img> 
                     <v-layout hidden-sm-and-down>
-                      <p class="title service__item-button">Teachers, Librarians & Faculty </p>
+                      <p class="title service__item-button">Consultancy Services for Business Owners </p>
                     </v-layout>
                     </v-layout>
                   </v-card>
@@ -408,7 +404,7 @@ const service_id = "default_service";
     text-decoration: none;
     border-radius: 10px;
     padding: 10px 16px;
-    color: #EB1204;
+    color: #2612A6;
     font-weight:700; 
 }
 .service__card {

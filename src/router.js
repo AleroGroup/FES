@@ -12,6 +12,7 @@ import Journey from './views/motivation/Journey.vue'
 import Crucible from './views/motivation/Crucible.vue'
 import ConceptDesign from './views/motivation/ConceptDesign.vue'
 
+
 Vue.use(Router)
 Vue.use(VueHead)
 
@@ -23,6 +24,27 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    /* Dynamically routing the components */
+    {
+      path: '/services/to-graduate-students-researchers',
+      name: 'services',
+      component: () => import('./views/services/GraduateStud.vue')
+    },
+    {
+      path: '/services/to-teachers-librarians-and-faculty',
+      name: 'services',
+      component: () => import('./views/services/SchoolAdmin.vue')
+    },
+    {
+      path: '/services/to-school-administrators-and-staff',
+      name: 'services',
+      component: () => import('./views/services/TeacherLib.vue')
+    },
+    {
+      path: '/services/to-graduate-students-researchers',
+      name: 'services',
+      component: () => import('./views/services/BusinessOwn.vue')
     },
     {
       path: '/about',

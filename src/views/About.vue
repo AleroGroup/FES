@@ -1,7 +1,7 @@
 <template>
   <v-content>
      <v-img :src="head__title" class="screen" height="550">
-     <v-content>
+     <v-con tent>
        <v-layout column justify-center style="margin-top:12%">
          <v-card data-aos="zoom-in" color="transparent" flat id="fes-intro">
             <h1>Transforming the learning experience</h1>
