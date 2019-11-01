@@ -45,7 +45,7 @@
       </v-flex>
     </v-layout>
     <v-container grid-list-xs style="margin-bottom:5%;">
-      <v-layout row justify-center align-center hidden-md-and-up>
+      <v-layout row justify-center align-center hidden-md-and-up ml-12>
             <!-- Services to the Graduate students -->
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
                <v-hover v-slot:default="{ hover }" close-delay="70"> 

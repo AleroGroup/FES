@@ -6,22 +6,22 @@
     </v-layout>
     <v-layout column justify-center ml-12>
     <v-container>
-      <v-layout row justify-center align-center hidden-md-and-up>
+      <v-layout row justify-center align-center hidden-md-and-up ml-3>
             <!-- Services to the Graduate students -->
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
                <v-hover v-slot:default="{ hover }" close-delay="70"> 
                   <router-link to="/services/to-graduate-students-researchers">
-                    <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="106">
+                    <v-card class="service__card"  :elevation="hover ? 8 : 0" width="190" height="106">
                       <v-layout column align-center>
                         <v-img
-                          width="70"
+                          width="60"
                           height="auto"
                           :src="student"
-                          class='ma-4'
+                          class='ma-2'
                           alt="Graduate student"
                         >
                         </v-img> 
-                        <v-layout hidden-sm-and-down>
+                        <v-layout>
                         <p class="subtitle service__item-button" style="text-decoration:none;">Graduate Students & Researchers</p>
                         </v-layout>        
                       </v-layout>
@@ -31,19 +31,19 @@
             </v-flex>
 
              <!-- Services to the Teachers-->
-            <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="350">
+            <v-flex class="service__item " data-aos="fade-up"  data-aos-delay="350">
               <v-hover v-slot:default="{ hover }" close-delay="70"> 
                 <router-link to="/services/to-teachers-librarians-and-faculty">
-                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="106">
+                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="190" height="106">
                   <v-layout column align-center>
                       <v-img
-                        width="70"
+                        width="60"
                         height="auto"
                         :src="education"
-                        class='ma-4'
+                        class='ma-2'
                       >
                       </v-img> 
-                    <v-layout hidden-sm-and-down>
+                    <v-layout>
                       <p class="subtitle service__item-button text-centered">Teachers, Librarians & Faculty </p>
                     </v-layout>
                     </v-layout>
@@ -56,16 +56,16 @@
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="450">
                <v-hover v-slot:default="{ hover }" close-delay="70">
                <router-link to="/services/to-school-administrators-and-staff">
-                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="106">
+                <v-card class="service__card mt-12"  :elevation="hover ? 8 : 0" width="190" height="106">
                   <v-layout column align-center>
                       <v-img
-                        width="70"
+                        width="60"
                         height="auto"
                         :src="staff"
-                        class='ma-4'
+                        class='ma-2'
                       >
                       </v-img> 
-                     <v-layout hidden-sm-and-down>
+                     <v-layout>
                       <p class="subtitle service__item-button text-centered">School Administrators & Staff</p>
                      </v-layout>
                     </v-layout>
@@ -78,16 +78,16 @@
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="550">
                <v-hover v-slot:default="{ hover }" close-delay="70">  
                <router-link to="/services/to-business-owners">
-                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="180" height="106">
+                <v-card class="service__card mt-12"  :elevation="hover ? 8 : 0" width="190" height="106">
                   <v-layout column align-center>
                       <v-img
-                        width="70"
+                        width="60"
                         height="auto"
                         :src="manager"
-                        class='ma-4'
+                        class='ma-2'
                       >
                       </v-img> 
-                    <v-layout hidden-sm-and-down>
+                    <v-layout>
                       <p class="subtitle service__item-button text-centered">Consultancy Services for Business Owners </p>
                     </v-layout>
                     </v-layout>
@@ -102,7 +102,7 @@
      <v-container>
       <v-layout row justify-center align-center hidden-sm-and-down>
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="250">
-                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
+                <v-card class="service__card"  :elevation="hover ? 8 : 2" width="200">
                   <v-layout column align-center>
                       <v-img
                         width="100"
@@ -121,7 +121,7 @@
             </v-flex>
 
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="350">
-                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
+                <v-card class="service__card"  :elevation="hover ? 8 : 2" width="200">
                   <v-layout column align-center>
                       <v-img
                         width="100"
@@ -139,7 +139,7 @@
             </v-flex>
 
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="450">
-                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
+                <v-card class="service__card"  :elevation="hover ? 8 : 2" width="200">
                   <v-layout column align-center>
                       <v-img
                         width="100"
@@ -157,7 +157,7 @@
             </v-flex>
 
             <v-flex class="service__item" data-aos="fade-up"  data-aos-delay="550">
-                <v-card class="service__card"  :elevation="hover ? 8 : 0" width="200">
+                <v-card class="service__card"  :elevation="hover ? 8 : 2" width="200">
                   <v-layout column align-center>
                       <v-img
                         width="100"
@@ -234,7 +234,7 @@ a {
 .service__card {
     text-decoration: none;
     border-radius: 10px;
-    border: 3px solid #80808015 !important;
+    border: 3px solid #80808003 !important;
     font-weight:600; 
     background-color: rgb(255, 255, 255);
 }

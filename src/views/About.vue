@@ -22,7 +22,7 @@
    </v-img>
   
   <div id="fes-motivation">
-   <v-layout column justify-center align-center hidden-xs-only>
+   <v-layout column justify-center align-center hidden-sm-only mt-10>
      <h2 data-aos="fade-up" class="display-1 font-weight-medium" style="margin-top:4%">Our Motivation</h2>
    </v-layout>
     <v-layout  row justify-space-around class="motivation__items" hidden-xs-only style="margin-bottom:100px;">
@@ -43,7 +43,7 @@
     
     <v-layout  column justify-center align-center>
           <section id='fes-message'>
-            <v-layout column justify-center align-center class="message__items">
+            <v-layout column justify-center align-center class="message__items" hidden-sm-and-down>
               <h2 class="message__item">OUR JOURNEY</h2>
               <v-layout  row justify-center align-center>
                 <v-card data-aos="fade-right" class="mx-auto">
@@ -53,23 +53,60 @@
                 When i learned accounting at college, it was not a nice experience. 
                 The teacher adopted a more teacher- centered approach, where he was 
                 in full control of the class. He was the only one who was... 
-                <v-layout row align-center class="message__btn ma-8" style="margin-bottom:6%">
+                <v-layout row align-center class="message__btn ma-8" style="margin-bottom:6%" hidden-sm-and-down>
                     <v-btn color="blue-grey lighten-2" class="text-lowercase"  icon to="/about/journey">Read more
                     <v-icon color="#2612A6">mdi-chevron-right</v-icon>
                     </v-btn>
                 </v-layout>
                 </p>
-              
+            </v-layout>
+          </v-layout>
+
+           <v-layout column justify-center align-center class="message__items" hidden-md-and-up>
+              <h2 class="message__item">OUR JOURNEY</h2>
+              <v-layout  row justify-center align-center>
+                <v-card data-aos="fade-right" class="mx-auto">
+                  <v-img :src="journey" width="170" height="200"></v-img>
+                </v-card>
+                <p class="text-justify" style="width:80%; margin:20px;">
+                When i learned accounting at college, it was not a nice experience. 
+                The teacher adopted a more teacher- centered approach, where he was 
+                in full control of the class. He was the only one who was... 
+                 <v-layout row align-center class="message__btn ma-8" style="margin-bottom:6%">
+                    <v-btn color="blue-grey lighten-2" class="text-lowercase"  icon to="/about/journey">Read more
+                    <v-icon color="#2612A6">mdi-chevron-right</v-icon>
+                    </v-btn>
+                </v-layout>
+                </p>
             </v-layout>
           </v-layout>
       </section>
 
 
         <section id='fes-message'>
-        <v-layout column justify-center align-center class="message__items ma-3">
+        <v-layout column justify-center align-center class="message__items ma-3"  hidden-sm-and-down>
             <h2 class="message__item">OUR CRUCIBLE</h2>
             <v-layout row justify-center align-center>
               <p class="text-justify" style="width:450px; margin:20px;">
+                 Technology is the best approach that a teacher and student can use 
+                 to implement a transformation in achieving their learning objectives. 
+                 The university college ICT infrastructure available was an Learning...
+              <v-layout row align-center class="message__btn ma-8" style="margin-bottom:6%">
+                <v-btn color="blue-grey lighten-2" class="text-lowercase" icon to="/about/crucible"> Read more
+                <v-icon color="#2612A6">mdi-chevron-right</v-icon>
+                </v-btn>
+              </v-layout>
+              </p>
+              <v-card data-aos="fade-left" class="mx-auto">
+                <v-img :src="technology"  width="170" height="200"></v-img>
+              </v-card>
+          </v-layout>
+          </v-layout>
+
+          <v-layout column justify-center align-center class="message__items ma-3" hidden-md-and-up>
+            <h2 class="message__item">OUR CRUCIBLE</h2>
+            <v-layout row justify-center align-center>
+              <p class="text-justify" style="width:80%; margin:20px;">
                  Technology is the best approach that a teacher and student can use 
                  to implement a transformation in achieving their learning objectives. 
                  The university college ICT infrastructure available was an Learning...
@@ -88,7 +125,7 @@
 
 
         <section id='fes-message' >
-            <v-layout column justify-center align-center class="message__items ma-3">
+            <v-layout column justify-center align-center class="message__items ma-3"  hidden-sm-and-down>
             <h2 class="message__item">CONCEPT & DESIGN</h2>
             <v-layout row justify-center align-center>
             <v-card data-aos="fade-right" class="mx-auto">
@@ -107,17 +144,37 @@
               </p>
             </v-layout>
             </v-layout>
+
+             <v-layout column justify-center align-center class="message__items ma-3" hidden-md-and-up>
+            <h2 class="message__item">CONCEPT & DESIGN</h2>
+            <v-layout row justify-center align-center>
+            <v-card data-aos="fade-right" class="mx-auto">
+                <v-img class="img__item" :src="desiging" width="170" height="200"></v-img>
+            </v-card>
+
+              <p class="text-justify" style="width:80%; margin:20px;">
+                Today, we have an opportunity to make authentic learning 
+                environments where students and teachers enjoy their scholarly 
+                journeys and graduate to be change agents in their societies...
+               <v-layout row align-center class="message__btn ma-8" style="margin-bottom:7%">
+                  <v-btn color="blue-grey lighten-2" class="text-lowercase" icon to="/about/conceptdesign">Read more
+                  <v-icon color="#2612A6">mdi-chevron-right</v-icon>
+                </v-btn>
+              </v-layout>
+              </p>
+            </v-layout>
+            </v-layout>
         </section>
         </v-layout> 
 
-  <div id="fes-motivation" style="margin-bottom:2%">
+  <v-layout column id="fes-motivation" style="margin-bottom:2%">
    <v-layout column justify-center align-center hidden-xs-only>
      <h2  data-aos="fade-up" class="display-1 font-weight-medium">Our Objectives</h2>
    </v-layout>
   
-   <v-layout data-aos="fade-up"  data-aos-delay="420" column justify-center align-center  hidden-sm-and-down>
+   <v-layout  pa-12  data-aos="fade-up"  data-aos-delay="420" column justify-center align-center  hidden-sm-and-down>
       <section id='fes-message'>
-        <v-layout  column justify-center>
+        <v-layout  column justify-center ml-9>
           <v-flex xs8>
             <p class="text-justify" style="width:640px; margin:26px;">
               1. To provide an environment where thought-leaders, practitioners in educational 
@@ -222,18 +279,18 @@
         </v-layout>
       </section>
     </v-layout>
-  </div >
+  </v-layout>
 
   <div id="fes-motivation" style="margin-bottom:2%">
     <v-layout column justify-center align-center hidden-xs-only>
       <h2  data-aos="fade-up" class="display-1 font-weight-medium">Our Vision and Our Hope</h2>
     </v-layout>
 
-      <v-layout  column justify-center align-center>
+      <v-layout  pa-12 column justify-center align-center hidden-sm-and-down>
             <section id='fes-message'>
             <v-layout column justify-center align-center class="message__items">
               
-              <v-layout column data-aos="fade-up"  data-aos-delay="420"  row justify-center align-center>
+              <v-layout ml-10 column data-aos="fade-up"  data-aos-delay="420"  row justify-center align-center>
                 <p class="text-justify" style="width:650px; margin:20px;">
                   The past 20 years of the digital age in Kenya have been met with skepticism about 
                   what its impact is on education, business, politics and society. So far, business 

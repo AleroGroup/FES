@@ -5,10 +5,13 @@
       <h2 class="main__title font-weight-regular pa-3 ma-6 text-capitalize font-weight-medium"> To graduate students & researchers </h2>
     </v-layout>
     <v-layout column justify-center ml-12 style="margin-bottom:2%;">
-      <div class="title__board font-weight-medium" style="width:600px;margin-left:15%;font-size:16px;"> We help develop built-in knowledge broad subject coverage, reflective learning and intuitive coding empowering school administrators and staff to design products and services along:
+      <div class="title__board font-weight-medium" style="width:600px;margin-left:15%;font-size:16px;"> 
+          <v-flex xs12 md6>
+              We help develop built-in knowledge broad subject coverage, reflective learning and intuitive coding empowering school administrators and staff to design products and services along:
+          </v-flex>
       </div>
       <v-layout row wrap>
-          
+          <v-flex xs12>
             <v-layout column mt-10 style="margin-left:18%;">
                 <div>
                     <p class="services_list"> 
@@ -59,6 +62,7 @@
                     </p>
                 </div> 
             </v-layout>
+          </v-flex>
             <!-- <img :src="image" class="image"> -->
         </v-layout>
     </v-layout>

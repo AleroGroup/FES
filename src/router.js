@@ -54,7 +54,7 @@ export default new Router({
       component: () => import('./views/services/BusinessOwn.vue')
     },
     {
-      path: '/about',
+      path: '/aboutus',
       name: 'about',
       component: About
     },
