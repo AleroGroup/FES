@@ -4,10 +4,10 @@
     <v-layout row justify-space-around>
       <div class="footer_item">
             <h4 class="footer__title">Services</h4>
-            <p>Graduate students</p>
-            <p>Teacher & faculty</p>
-            <p>School admin & staff</p>
-            <p>Business Owners</p>
+            <p><router-link to="/services/to-graduate-students-researchers">Graduate students</router-link></p>
+            <p><router-link to="/services/to-teachers-librarians-and-faculty">Teacher & faculty</router-link></p>
+            <p><router-link to="/services/to-school-administrators-and-staff">School admin & staff</router-link></p>
+            <p><router-link to="/services/to-business-owners">Business Owners</router-link></p>
         </div>
         <div class="footer_item">
             <h4 class="footer__title">Company</h4>
@@ -25,7 +25,7 @@
         
 
      <v-layout row justify-space-around  style="margin-bottom:15px;">
-        <v-card flat color="transparent" class="email font-weight-medium">firefly.edtech@gmail.com</v-card>
+        <v-card flat color="transparent" class="email font-weight-medium">info@fireflyedtechsolutions.net</v-card>
         <v-card flat color="transparent"  class="rights font-weight-medium">2018-2019 Firefly Edtech Solutions All Rights Reserved</v-card>
     </v-layout>
 
