@@ -2,12 +2,12 @@
   <v-content >
     <v-layout id="team-into" style="margin-left:12%;margin-top:4%;
     margin-bottom:2%">
-      <h2 class="main__title font-weight-regular pa-3 ma-6"> Our Team </h2>
+      <h2 class="main__title font-weight-regular pa-3 ma-4"> Our Team </h2>
     </v-layout>
     <v-layout column justify-center align-center style="margin-bottom:2%">
       <div class="title title__board"> Board of Directors</div>
       <v-layout row justify-center align-center >
-         <v-card flat class="ma-6" id="Board of Directors" v-for="board in boards" :key="board.id">
+         <v-card flat class="ma-5" id="Board of Directors" v-for="board in boards" :key="board.id">
             <v-layout column justify-center align-center>
               <v-img :src='board.url' :style="board.style"></v-img>
               <v-card-title>
@@ -20,7 +20,7 @@
       </v-card>
     </v-layout>
 
-     <div class="title title__board"> Technical team</div>
+     <!-- <div class="title title__board"> Technical team</div>
      <v-layout row justify-center align-center >
         <v-card flat class="ma-6" id="Board of Directors" v-for="team in teams" :key="team.id">
           <v-layout column justify-center align-center>
@@ -33,7 +33,7 @@
             </v-card-text>
          </v-layout>
       </v-card>
-     </v-layout>
+     </v-layout> -->
     </v-layout>
 
     <v-layout row wrap>
@@ -89,33 +89,10 @@ export default {
          name: 'Frida Wawira Ngari',
          title: 'Founder and CEO works as Lead Strategist on Educational Technologies',
          style: 'border-radius:100px;width:200px;'
-       },
-       {
-         url: 'https://ik.imagekit.io/qpt2onjfe/fes/download_5qmKj7b2N.png',
-         name: 'Stephanie Wangari Kirathe',
-         title: 'Chief Technical Officer (CTO) and also works as the Chief Operations Officer (COO)',
-         style: 'border-radius:100px;width:200px;'
-       },
+       }
     ],
     teams: [
-       {
-         url: 'https://ik.imagekit.io/qpt2onjfe/fes/IMG-6041_OURNR1dl-.JPG',
-         name: 'Joshua Kimbareeba',
-         title: 'Fullstack Developer',
-         style: 'border-radius:100px;width:200px;height:200px'
-       },
-       {
-         url: 'https://ik.imagekit.io/qpt2onjfe/fes/evans_Iezo4QI7x.jpeg',
-         name: 'Evans Kimathi',
-         title: 'Designer and also works as Frontend Developer',
-         style: 'border-radius:100px;width:200px;height:200px'
-       },
-       {
-         url: 'https://ik.imagekit.io/qpt2onjfe/fes/660095_GwuNRca1v.JPG',
-         name: 'Precious Wangu',
-         title: 'Designer and also works as UX Researcher',
-         style: 'border-radius:100px;width:200px;height:200px'
-       },
+      
     ],
     //images
     form__img:'https://ik.imagekit.io/qpt2onjfe/fes/contact_D1y1LU-qg.svg',
